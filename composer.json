@@ -24,10 +24,10 @@
         }
     },
     "require": {
-        "php": ">=7.1.0"
+        "php": ">=7.1.0",
+        "ext-simplexml": "*"
     },
     "require-dev": {
-        "ext-simplexml": "*",
         "friendsofphp/php-cs-fixer": "^2.15",
         "pdepend/pdepend": "@stable",
         "phpmd/phpmd": "@stable",
