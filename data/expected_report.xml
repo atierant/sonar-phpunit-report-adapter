@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="My Test Suite" tests="299" assertions="527" errors="0" failures="0" skipped="4" time="157.837608">
+        <testcase name="testExecute" class="Tests\Functional\App\Command\FirstCommandTest"
+                  classname="Tests.Functional.App.Command.FirstCommandTest"
+                  file="./tests/Functional/Command/FirstCommandTest.php" line="16" assertions="1" time="45.803655"/>
+        <testcase name="testExecute" class="Tests\Functional\App\Command\SecondCommandTest"
+                  classname="Tests.Functional.App.Command.SecondCommandTest"
+                  file="./tests/Functional/Command/SecondCommandTest.php" line="16" assertions="1" time="0.212525"/>
+        <testcase name="testRoutes with data set #0" class="Tests\Functional\App\Controller\HomeControllerTest"
+                  classname="Tests.Functional.Controller.HomeControllerTest"
+                  file="./tests/Functional/App/Controller/HomeControllerTest.php" line="29" assertions="1"
+                  time="2.159318"/>
+        <testcase name="testPostMaintenance with data set #0"
+                  class="Tests\Functional\App\Controller\FirstControllerTest"
+                  classname="Tests.Functional.Controller.FirstControllerTest"
+                  file="./tests/Functional/App/Controller/FirstControllerTest.php" line="31" assertions="1"
+                  time="1.709391"/>
+        <testcase name="testPageIsSuccessful with data set &quot;/public/api/v1/&quot;" class="Tests\SmokeTest"
+                  classname="Tests.SmokeTest" file="./tests/SmokeTest.php" line="119" assertions="1" time="0.476224"/>
+        <testcase name="testFirst with data set &quot;10 Mai 2018, ok&quot;"
+                  class="Tests\Unitary\App\Helper\MyHelperTest" classname="Tests.Unitary.App.Helper.MyHelperTest"
+                  file="./tests/Unitary/Helper/MyHelperTest.php" line="86" assertions="1" time="0.001112"/>
+        <testcase name="testFirst with data set &quot;Dernier jour du mois en cours, ok&quot;"
+                  class="Tests\Unitary\App\Helper\MyHelperTest" classname="Tests.Unitary.App.Helper.MyHelperTest"
+                  file="./tests/Unitary/Helper/MyHelperTest.php" line="86" assertions="1" time="0.000974"/>
+        <testcase name="testGetEasterDateTime" class="Tests\Unitary\App\Helper\MyHelperTest"
+                  classname="Tests.Unitary.App.Helper.MyHelperTest" file="./tests/Unitary/Helper/MyHelperTest.php"
+                  line="101" assertions="1" time="0.001048"/>
+        <testcase name="testSecond with data set &quot;Sans paramètre&quot;"
+                  class="Tests\Unitary\App\Helper\MyHelperTest" classname="Tests.Unitary.App.Helper.MyHelperTest"
+                  file="./tests/Unitary/Helper/MyHelperTest.php" line="135" assertions="1" time="0.001916"/>
+        <testcase name="testSecond with data set &quot;Au format Timestamp&quot;"
+                  class="Tests\Unitary\App\Helper\MyHelperTest" classname="Tests.Unitary.App.Helper.MyHelperTest"
+                  file="./tests/Unitary/Helper/MyHelperTest.php" line="135" assertions="1" time="0.001318"/>
+    </testsuite>
+</testsuites>

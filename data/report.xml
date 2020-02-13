@@ -1,0 +1,36 @@
+<testsuites>
+  <testsuite assertions="527" errors="0" failures="0" name="My Test Suite" skipped="4" tests="299" time="157.837608">
+    <testsuite assertions="1" errors="0" failures="0" file="./tests/Functional/Command/FirstCommandTest.php" name="Tests\Functional\App\Command\FirstCommandTest" skipped="0" tests="1" time="45.803655">
+      <testcase assertions="1" class="Tests\Functional\App\Command\FirstCommandTest" classname="Tests.Functional.App.Command.FirstCommandTest" file="./tests/Functional/Command/FirstCommandTest.php" line="16" name="testExecute" time="45.803655" />
+    </testsuite>
+    <testsuite assertions="1" errors="0" failures="0" file="./tests/Functional/Command/SecondCommandTest.php" name="Tests\Functional\App\Command\SecondCommandTest" skipped="0" tests="1" time="0.212525">
+      <testcase assertions="1" class="Tests\Functional\App\Command\SecondCommandTest" classname="Tests.Functional.App.Command.SecondCommandTest" file="./tests/Functional/Command/SecondCommandTest.php" line="16" name="testExecute" time="0.212525" />
+    </testsuite>
+    <testsuite assertions="2" errors="0" failures="0" file="./tests/Functional/App/Controller/HomeControllerTest.php" name="Tests\Functional\App\Controller\HomeControllerTest" skipped="0" tests="2" time="2.749162">
+      <testsuite assertions="2" errors="0" failures="0" file="Tests\Functional\App\Controller\HomeControllerTest::testRoutes" name="Tests\Functional\App\Controller\HomeControllerTest::testRoutes" skipped="0" tests="2" time="2.749162">
+        <testcase assertions="1" class="Tests\Functional\App\Controller\HomeControllerTest" classname="Tests.Functional.Controller.HomeControllerTest" file="./tests/Functional/App/Controller/HomeControllerTest.php" line="29" name="testRoutes with data set #0" time="2.159318" />
+      </testsuite>
+    </testsuite>
+    <testsuite assertions="2" errors="0" failures="0" file="./tests/Functional/App/Controller/FirstControllerTest.php" name="Tests\Functional\App\Controller\FirstControllerTest" skipped="0" tests="2" time="2.291387">
+      <testsuite assertions="2" errors="0" failures="0" file="Tests\Functional\App\Controller\FirstControllerTest::testPostMaintenance" name="Tests\Functional\App\Controller\FirstControllerTest::testPostMaintenance" skipped="0" tests="2" time="2.291387">
+        <testcase assertions="1" class="Tests\Functional\App\Controller\FirstControllerTest" classname="Tests.Functional.Controller.FirstControllerTest" file="./tests/Functional/App/Controller/FirstControllerTest.php" line="31" name="testPostMaintenance with data set #0" time="1.709391" />
+      </testsuite>
+    </testsuite>
+    <testsuite assertions="67" errors="0" failures="0" file="./tests/SmokeTest.php" name="Tests\SmokeTest" skipped="0" tests="67" time="38.569916">
+      <testsuite assertions="67" errors="0" failures="0" file="Tests\SmokeTest::testPageIsSuccessful" name="Tests\SmokeTest::testPageIsSuccessful" skipped="0" tests="67" time="38.569916">
+        <testcase assertions="1" class="Tests\SmokeTest" classname="Tests.SmokeTest" file="./tests/SmokeTest.php" line="119" name="testPageIsSuccessful with data set &quot;/public/api/v1/&quot;" time="0.476224" />
+      </testsuite>
+    </testsuite>
+    <testsuite assertions="75" errors="0" failures="0" file="./tests/Unitary/Helper/MyHelperTest.php" name="Tests\Unitary\App\Helper\MyHelperTest" skipped="0" tests="74" time="0.130271">
+      <testsuite assertions="21" errors="0" failures="0" file="Tests\Unitary\App\Helper\MyHelperTest::testFirst" name="Tests\Unitary\App\Helper\MyHelperTest::testFirst" skipped="0" tests="21" time="0.021404">
+        <testcase assertions="1" class="Tests\Unitary\App\Helper\MyHelperTest" classname="Tests.Unitary.App.Helper.MyHelperTest" file="./tests/Unitary/Helper/MyHelperTest.php" line="86" name="testFirst with data set &quot;10 Mai 2018, ok&quot;" time="0.001112" />
+        <testcase assertions="1" class="Tests\Unitary\App\Helper\MyHelperTest" classname="Tests.Unitary.App.Helper.MyHelperTest" file="./tests/Unitary/Helper/MyHelperTest.php" line="86" name="testFirst with data set &quot;Dernier jour du mois en cours, ok&quot;" time="0.000974" />
+      </testsuite>
+      <testcase assertions="1" class="Tests\Unitary\App\Helper\MyHelperTest" classname="Tests.Unitary.App.Helper.MyHelperTest" file="./tests/Unitary/Helper/MyHelperTest.php" line="101" name="testGetEasterDateTime" time="0.001048" />
+      <testsuite assertions="4" errors="0" failures="0" file="Tests\Unitary\App\Helper\MyHelperTest::testSecond" name="Tests\Unitary\App\Helper\MyHelperTest::testSecond" skipped="0" tests="4" time="0.006821">
+        <testcase assertions="1" class="Tests\Unitary\App\Helper\MyHelperTest" classname="Tests.Unitary.App.Helper.MyHelperTest" file="./tests/Unitary/Helper/MyHelperTest.php" line="135" name="testSecond with data set &quot;Sans param&#232;tre&quot;" time="0.001916" />
+        <testcase assertions="1" class="Tests\Unitary\App\Helper\MyHelperTest" classname="Tests.Unitary.App.Helper.MyHelperTest" file="./tests/Unitary/Helper/MyHelperTest.php" line="135" name="testSecond with data set &quot;Au format Timestamp&quot;" time="0.001318" />
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
