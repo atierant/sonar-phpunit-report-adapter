@@ -33,13 +33,14 @@ Impossible d'ajouter deux fois la même mesure, en cas d'utilisation d'un provid
 ````xml
 <testsuites>
   <testsuite assertions="527" errors="0" failures="0" name="My Test Suite" skipped="4" tests="299" time="157.837608">
-    <testsuite assertions="75" errors="0" failures="0" file="./tests/Unitary/Helper/MyHelperTest.php" name="Tests\Unitary\App\Helper\MyHelperTest" skipped="0" tests="74" time="0.130271">
-      <testsuite assertions="21" errors="0" failures="0" file="Tests\Unitary\App\Helper\MyHelperTest::testFirst" name="Tests\Unitary\App\Helper\MyHelperTest::testFirst" skipped="0" tests="21" time="0.021404">
+    <testsuite assertions="20" errors="0" failures="0" file="./tests/Unitary/Helper/MyHelperTest.php" name="Tests\Unitary\App\Helper\MyHelperTest" skipped="0" tests="20" time="0.130271">
+      <testsuite assertions="12" errors="0" failures="0" file="Tests\Unitary\App\Helper\MyHelperTest::testFirst" name="Tests\Unitary\App\Helper\MyHelperTest::testFirst" skipped="0" tests="12" time="0.021404">
         <testcase assertions="1" class="Tests\Unitary\App\Helper\MyHelperTest" classname="Tests.Unitary.App.Helper.MyHelperTest" file="./tests/Unitary/Helper/MyHelperTest.php" line="86" name="testFirst with data set &quot;10 Mai 2018, ok&quot;" time="0.001112" />
         <testcase assertions="1" class="Tests\Unitary\App\Helper\MyHelperTest" classname="Tests.Unitary.App.Helper.MyHelperTest" file="./tests/Unitary/Helper/MyHelperTest.php" line="86" name="testFirst with data set &quot;Dernier jour du mois en cours, ok&quot;" time="0.000974" />
+        <!-- 10 other tests for MyHelperTest:86 -->
       </testsuite>
     </testsuite>
-    <!-- other test in MyHelperTest -->
+    <!-- 8 other tests in MyHelperTest -->
   </testsuite>
 </testsuites>
 ````
