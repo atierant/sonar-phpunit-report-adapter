@@ -39,6 +39,7 @@ class SonarPhpUnitFormater
 
     /**
      * Format file
+     * @codeCoverageIgnore
      */
     public function format()
     {
@@ -63,6 +64,7 @@ class SonarPhpUnitFormater
 
     /**
      * Format file with recursive DOM iterator
+     * @codeCoverageIgnore
      */
     public function formatWithRecursiveIterator()
     {

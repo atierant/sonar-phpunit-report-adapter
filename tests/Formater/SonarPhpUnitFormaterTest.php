@@ -2,6 +2,7 @@
 
 namespace App\Tests\Formater;
 
+use App\Formater\SonarPhpUnitFormater;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -9,6 +10,16 @@ use PHPUnit\Framework\TestCase;
  */
 class SonarPhpUnitFormaterTest extends TestCase
 {
+    /* @var SonarPhpUnitFormater */
+    private $formater;
+
+    /**
+     * Initialisation du helper
+     */
+    public function setUp(): void
+    {
+        $this->formater = new SonarPhpUnitFormater('data/report.xml');
+    }
 
     public function testFormat()
     {

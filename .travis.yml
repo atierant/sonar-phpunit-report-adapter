@@ -42,7 +42,7 @@ script:
     - composer unit_tests
     - |
         if [[ $COVERAGE == true ]]; then
-          php lib/CoverageChecker.php clover.xml 60
+          php lib/CoverageChecker.php clover.xml 10
         fi
     - |
         if [[ $STATIC_ANALYSIS == true ]]; then
