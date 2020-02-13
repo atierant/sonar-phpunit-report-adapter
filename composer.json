@@ -2,6 +2,7 @@
     "name": "atierant/sonar-phpunit-report-adapter",
     "license": "MIT",
     "type": "project",
+    "description": "A Sonarqube phpunit report.xml adapter",
     "authors": [
         {
             "name": "Arnaud TIERANT",
