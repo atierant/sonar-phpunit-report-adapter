@@ -1,4 +1,7 @@
 # sonar-phpunit-report-adapter
+
+[![Build Status](https://travis-ci.com/atierant/sonar-phpunit-report-adapter.svg?branch=master)](https://travis-ci.com/atierant/sonar-phpunit-report-adapter)
+
 phpunit xml result patcher so sonarphp doesn't choke
 
 Refonte de certains scripts python que j'ai trouvé en DOMDocument php pour reformater un fichier report.xml afin qu'il puisse être pris en compte dans Sonarqube  
