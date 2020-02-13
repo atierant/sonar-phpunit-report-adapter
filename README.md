@@ -4,10 +4,20 @@
 
 phpunit xml result patcher so sonarphp doesn't choke
 
-Refonte de certains scripts python que j'ai trouvé en DOMDocument php pour reformater un fichier report.xml afin qu'il puisse être pris en compte dans Sonarqube  
-Besoin d'analyse en profondeur du xml, mes testsuites sont sur plusieurs niveaux  
+## IT IS A NON-FUNCTIONAL WORK IN PROGRESS !!!!
 
-Erreurs Sonar : 
+## Usage
+
+`./cmd convert data/report.xml`  
+
+## Description
+
+Formatage d'un [`report.xml`](./data/report.xml) via php [DOMDocument](https://www.php.net/manual/fr/book.dom.php) afin qu'il puisse être pris en compte dans Sonarqube.
+
+[J'ai trouvé chez IteratorGarden](https://github.com/hakre/Iterator-Garden) une référence vers [RecursiveDOMIterator](https://github.com/salathe/spl-examples/wiki/RecursiveDOMIterator) qui pourrait être intéressante à utiliser.
+
+## Description des erreurs Sonar rencontrées
+
 1. `WARN: Test cases must always be descendants of a file-based suite, skipping`  
 Les cas de test doivent toujours être des descendants d'une suite basée sur des fichiers, il faut donc une structure du type :
 ````xml
@@ -25,6 +35,9 @@ Les cas de test doivent toujours être des descendants d'une suite basée sur de
   </testsuite>
 </testsuites>
 ````
+
+[Une solution](https://github.com/Codeception/Codeception/issues/5004#issuecomment-419493813) + [une autre partie de la solution, ajouter un name](https://github.com/Codeception/Codeception/issues/5004#issuecomment-450865682)
+
 2. `ERROR: Error during SonarQube Scanner execution java.lang.UnsupportedOperationException: Can not add the same measure twice`  
 Impossible d'ajouter deux fois la même mesure, en cas d'utilisation d'un provider par exemple, cf. les 2x2 tests du MyHelperTest.  
  
@@ -45,12 +58,10 @@ Impossible d'ajouter deux fois la même mesure, en cas d'utilisation d'un provid
 </testsuites>
 ````
 
-Usage : `./cmd convert data/report.xml`  
+##Liens
 
-https://gist.github.com/black-silence/35b958fe92c704de551a3ca4ea082b87  
-https://community.sonarsource.com/t/sonarphp-doesnt-analyze-php-unit-tests-with-dataprovider/2775/5  
-https://gerrit.wikimedia.org/r/#/c/integration/config/+/508019/9/dockerfiles/quibble-stretch-php70/phpunit-junit-edit.py  
-https://gist.github.com/macghriogair/4976b8e6ea6d20a61cdeb95effb73364  
-https://www.php.net/manual/fr/book.dom.php  
-
-https://github.com/hakre/Iterator-Garden
++ [2015-02-18 Une discussion sur Graddle au sujet de cette erreur](https://discuss.gradle.org/t/sonar-runner-same-project-analyzed-twice-causing-sonar-exception-can-not-add-the-same-measure-twice/5259)
++ [2018-09-21 Une discussion sur la communauté Sonarsource](https://community.sonarsource.com/t/sonarphp-doesnt-analyze-php-unit-tests-with-dataprovider/2775/5)
++ [2019-04-19 Black Silence a fait un script python pour corriger](https://gist.github.com/black-silence/35b958fe92c704de551a3ca4ea082b87)
++ [2019-05-09 Kostajh a eu l'erreur `Can not add the same measure twice` avec le code de BlackSilence et a modifié le script de BS qui ignore la couverture des tests des providers](https://gerrit.wikimedia.org/r/c/integration/config/+/508019/9/dockerfiles/quibble-stretch-php70/phpunit-junit-edit.py)
++ [2019-06-17 macghriogair a adapté le script de Kostajh pour déplacer les nœuds de testcase dans la testsuite parente à la place](https://gist.github.com/macghriogair/4976b8e6ea6d20a61cdeb95effb73364)
